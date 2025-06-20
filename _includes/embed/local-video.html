@@ -1,0 +1,13 @@
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px;">
+  <video 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    {% if include.controls != false %}controls{% endif %}
+    {% if include.autoplay == true %}autoplay{% endif %}
+    {% if include.loop == true %}loop{% endif %}
+    {% if include.muted == true %}muted{% endif %}
+    {% if include.poster %}poster="{{ site.baseurl }}/assets/img/{{ include.poster }}"{% endif %}
+  >
+    <source src="{{ site.baseurl }}/assets/videos/{{ include.path }}" type="video/{{ include.path | split: '.' | last }}">
+    您的浏览器不支持视频标签。
+  </video>
+</div>

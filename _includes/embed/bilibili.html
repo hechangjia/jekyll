@@ -1,0 +1,11 @@
+<div class="ratio ratio-16x9">
+  <iframe
+    class="embed-video"
+    loading="lazy"
+    src="https://player.bilibili.com/player.html?bvid={{ include.id }}{% if include.page %}&page={{ include.page }}{% endif %}{% if include.muted %}&mute=1{% endif %}{% if include.autoplay %}&autoplay=1{% endif %}"
+    scrolling="no"
+    frameborder="0"
+    framespacing="0"
+    allowfullscreen="true"
+  ></iframe>
+</div>
