@@ -1,0 +1,126 @@
+/* 创建带有星星图标的"特殊"提示框 */
+.prompt-special {
+  background-color: rgba(255, 105, 180, 0.15);
+  border-left: 4px solid rgb(255, 105, 180);
+  
+  &::before {
+    content: "\f005";  /* 星星图标 */
+    color: rgb(255, 105, 180);
+  }
+}
+
+/* 自定义紫色提示框 */
+.prompt-purple {
+  background-color: rgba(128, 0, 128, 0.15);
+  border-left: 4px solid rgb(128, 0, 128);
+  
+  &::before {
+    content: "\f0eb";  /* 使用 FontAwesome 图标编码 */
+    color: rgb(128, 0, 128);
+  }
+}
+
+/* 自定义橙色提示框 */
+.prompt-orange {
+  background-color: rgba(255, 165, 0, 0.15);
+  border-left: 4px solid rgb(255, 165, 0);
+  
+  &::before {
+    content: "\f06e";  /* 使用 FontAwesome 图标编码 */
+    color: rgb(255, 165, 0);
+  }
+}
+
+// 在这里添加自定义样式
+
+// 添加提示框样式
+.prompt {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.prompt::before {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.prompt > p {
+  padding-left: 2.5rem;
+  margin-bottom: 0;
+}
+
+// 信息提示框
+.prompt-info {
+  background-color: #e1f0fc;
+  border-left: 0.25rem solid #006cbc;
+}
+
+.prompt-info::before {
+  content: "\f129";
+  color: #006cbc;
+}
+
+// 提示框
+.prompt-tip {
+  background-color: #e4f5e8;
+  border-left: 0.25rem solid #238636;
+}
+
+.prompt-tip::before {
+  content: "\f0eb";
+  color: #238636;
+}
+
+// 警告框
+.prompt-warning {
+  background-color: #fff3e0;
+  border-left: 0.25rem solid #bb6702;
+}
+
+.prompt-warning::before {
+  content: "\f071";
+  color: #bb6702;
+}
+
+// 危险框
+.prompt-danger {
+  background-color: #f8e6e8;
+  border-left: 0.25rem solid #a52829;
+}
+
+.prompt-danger::before {
+  content: "\f06a";
+  color: #a52829;
+}
+
+// 暗色模式
+@media (prefers-color-scheme: dark) {
+  .prompt {
+    color: #ebebeb;
+  }
+
+  .prompt-info {
+    background-color: rgba(56, 139, 253, 0.15);
+    border-left-color: rgb(56, 139, 253);
+  }
+
+  .prompt-tip {
+    background-color: rgba(46, 160, 67, 0.15);
+    border-left-color: rgb(46, 160, 67);
+  }
+
+  .prompt-warning {
+    background-color: rgba(207, 146, 9, 0.15);
+    border-left-color: rgb(207, 146, 9);
+  }
+
+  .prompt-danger {
+    background-color: rgba(219, 58, 50, 0.15);
+    border-left-color: rgb(219, 58, 50);
+  }
+}

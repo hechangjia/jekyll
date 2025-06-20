@@ -1,0 +1,69 @@
+/* 提示框基本样式 */
+.prompt {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
+  color: var(--prompt-text-color);
+  border-radius: 0.25rem;
+}
+
+.prompt > p:last-child {
+  margin-bottom: 0;
+}
+
+.prompt::before {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.prompt.p-3 {
+  padding: 1rem !important;
+}
+
+.prompt > p {
+  padding-left: 2.5rem;
+}
+
+/* 各种提示框类型样式 */
+.prompt-info {
+  background-color: var(--prompt-info-bg);
+  border-left: 0.25rem solid var(--prompt-info-border);
+}
+
+.prompt-info::before {
+  content: "\f129";
+  color: var(--prompt-info-icon);
+}
+
+.prompt-tip {
+  background-color: var(--prompt-tip-bg);
+  border-left: 0.25rem solid var(--prompt-tip-border);
+}
+
+.prompt-tip::before {
+  content: "\f0eb";
+  color: var(--prompt-tip-icon);
+}
+
+.prompt-warning {
+  background-color: var(--prompt-warning-bg);
+  border-left: 0.25rem solid var(--prompt-warning-border);
+}
+
+.prompt-warning::before {
+  content: "\f071";
+  color: var(--prompt-warning-icon);
+}
+
+.prompt-danger {
+  background-color: var(--prompt-danger-bg);
+  border-left: 0.25rem solid var(--prompt-danger-border);
+}
+
+.prompt-danger::before {
+  content: "\f06a";
+  color: var(--prompt-danger-icon);
+}

@@ -1,0 +1,100 @@
+/* GitHub 风格警告块 - 更接近 GitHub 的样式 */
+.prompt {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 6px;
+  border-left: 0;
+  font-size: 14px;
+}
+
+.prompt p:last-child {
+  margin-bottom: 0;
+}
+
+.prompt::before {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.prompt-info {
+  background-color: #d0ebff;
+  border: 1px solid rgba(4, 66, 137, 0.2);
+}
+
+.prompt-info::before {
+  content: "\f05a"; /* 圆形信息图标 */
+  color: #0969da;
+}
+
+.prompt-tip {
+  background-color: #dafbe1;
+  border: 1px solid rgba(27, 94, 32, 0.2);
+}
+
+.prompt-tip::before {
+  content: "\f0eb"; /* 灯泡图标 */
+  color: #1a7f37;
+}
+
+.prompt-warning {
+  background-color: #fff8c5;
+  border: 1px solid rgba(176, 136, 0, 0.2);
+}
+
+.prompt-warning::before {
+  content: "\f071"; /* 警告图标 */
+  color: #9a6700;
+}
+
+.prompt-danger {
+  background-color: #ffebe9;
+  border: 1px solid rgba(158, 28, 35, 0.2);
+}
+
+.prompt-danger::before {
+  content: "\f06a"; /* 危险图标 */
+  color: #cf222e;
+}
+
+/* 标题样式 */
+.prompt-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 28px; /* 为图标留出空间 */
+}
+
+/* 内容样式 */
+.prompt p {
+  margin-left: 28px; /* 为图标留出空间 */
+}
+
+/* 暗色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .prompt-info {
+    background-color: rgba(56, 139, 253, 0.15);
+    border-color: rgba(56, 139, 253, 0.4);
+    color: #c9d1d9;
+  }
+
+  .prompt-tip {
+    background-color: rgba(46, 160, 67, 0.15);
+    border-color: rgba(46, 160, 67, 0.4);
+    color: #c9d1d9;
+  }
+
+  .prompt-warning {
+    background-color: rgba(187, 128, 9, 0.15);
+    border-color: rgba(187, 128, 9, 0.4);
+    color: #c9d1d9;
+  }
+
+  .prompt-danger {
+    background-color: rgba(248, 81, 73, 0.15);
+    border-color: rgba(248, 81, 73, 0.4);
+    color: #c9d1d9;
+  }
+}

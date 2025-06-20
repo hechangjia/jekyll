@@ -262,3 +262,11 @@ comments:
     lang: zh-CN
     reactions_enabled: 1
     emit_metadata: 1  # 添加这个也在你的脚本中
+
+
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'

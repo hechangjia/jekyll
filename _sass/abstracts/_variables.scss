@@ -1,0 +1,71 @@
+/* sidebar */
+
+$sidebar-width: 260px !default; /* the basic width */
+$sidebar-width-large: 300px !default; /* screen width: >= 1650px */
+$sb-btn-gap: 0.8rem !default;
+$sb-btn-gap-lg: 1rem !default;
+
+/* other framework sizes */
+
+$topbar-height: 3rem !default;
+$search-max-width: 200px !default;
+$footer-height: 5rem !default;
+$footer-height-large: 6rem !default; /* screen width: < 850px */
+$main-content-max-width: 1250px !default;
+$radius-sm: 6px !default;
+$radius-lg: 10px !default;
+$back2top-size: 2.75rem !default;
+
+/* syntax highlight */
+
+$code-font-size: 0.85rem !default;
+$code-header-height: 2.25rem !default;
+$code-dot-size: 0.75rem !default;
+$code-dot-gap: 0.5rem !default;
+$code-icon-width: 1.75rem !default;
+
+/* fonts */
+
+$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+
+// prompt-component variables
+:root {
+  --prompt-text-color: rgb(46, 46, 46);
+
+  --prompt-info-bg: rgb(225, 240, 252);
+  --prompt-info-icon: rgb(0, 108, 188);
+  --prompt-info-border: rgb(0, 108, 188);
+
+  --prompt-tip-bg: rgb(228, 245, 232);
+  --prompt-tip-icon: rgb(35, 134, 54);
+  --prompt-tip-border: rgb(35, 134, 54);
+
+  --prompt-warning-bg: rgb(255, 243, 224);
+  --prompt-warning-icon: rgb(187, 103, 2);
+  --prompt-warning-border: rgb(187, 103, 2);
+
+  --prompt-danger-bg: rgb(248, 230, 232);
+  --prompt-danger-icon: rgb(165, 40, 41);
+  --prompt-danger-border: rgb(165, 40, 41);
+}
+
+[data-theme="dark"] {
+  --prompt-text-color: rgb(235, 235, 235);
+
+  --prompt-info-bg: rgba(56, 139, 253, 0.15);
+  --prompt-info-icon: rgb(56, 139, 253);
+  --prompt-info-border: rgb(56, 139, 253);
+
+  --prompt-tip-bg: rgba(46, 160, 67, 0.15);
+  --prompt-tip-icon: rgb(46, 160, 67);
+  --prompt-tip-border: rgb(46, 160, 67);
+
+  --prompt-warning-bg: rgba(207, 146, 9, 0.15);
+  --prompt-warning-icon: rgb(207, 146, 9);
+  --prompt-warning-border: rgb(207, 146, 9);
+
+  --prompt-danger-bg: rgba(219, 58, 50, 0.15);
+  --prompt-danger-icon: rgb(219, 58, 50);
+  --prompt-danger-border: rgb(219, 58, 50);
+}
