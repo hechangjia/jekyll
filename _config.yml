@@ -231,8 +231,8 @@ jekyll-archives:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-sitemap
   - jemoji
   - jekyll-mentions
 
