@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/images/Manim.png
+  path: /assets/images/lovely.png
 ---
 
 正常文本内容。
